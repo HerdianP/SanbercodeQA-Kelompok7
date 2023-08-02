@@ -45,6 +45,4 @@ describe('cart', () => {
     cy.visit('https://magento.softwaretestingboard.com/men.html')
    
   })
-  
- 
 })
