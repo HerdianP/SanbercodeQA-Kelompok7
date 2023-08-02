@@ -1,7 +1,7 @@
 # SanbercodeQA-Kelompok7
 Final Project Sanbercode QA Batch 47
 
-Nama Anggota Kelompok:
+Nama Anggota Kelompok 7:
 1. Herdian Putera
 2. Teguh Junian
 
