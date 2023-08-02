@@ -2,7 +2,7 @@ describe('Auth Update Account', () => {
   it('sukses_updateaccount_firstlastname', () => {
     cy.visit('https://magento.softwaretestingboard.com')
     cy.get('.panel > .header > .authorization-link > a').click()
-    cy.get('#email').type("herdiantesting4@gmail.com")
+    cy.get('#email').type("herdiantesting6@gmail.com")
     cy.get('#pass').type("123123qwe@@")
     cy.wait(30)
     cy.get('.login-container > .block-customer-login > .block-content > #login-form > .fieldset > .actions-toolbar > div.primary > #send2').click()
@@ -19,7 +19,7 @@ describe('Auth Update Account', () => {
   it('sukses_updateaccount_email', () => {
     cy.visit('https://magento.softwaretestingboard.com')
     cy.get('.panel > .header > .authorization-link > a').click()
-    cy.get('#email').type("herdiantesting4@gmail.com")
+    cy.get('#email').type("herdiantesting6@gmail.com")
     cy.get('#pass').type("123123qwe@@")
     cy.wait(30)
     cy.get('.login-container > .block-customer-login > .block-content > #login-form > .fieldset > .actions-toolbar > div.primary > #send2').click()
@@ -28,7 +28,7 @@ describe('Auth Update Account', () => {
     cy.get(':nth-child(2) > .customer-welcome > .customer-menu > .header > :nth-child(1) > a').click({force: true})
     cy.get('.block-dashboard-info > .block-content > .box > .box-actions > .edit > span').click()
     cy.get('#change-email').click()
-    cy.get('#email').type("{selectAll}HerdianGanti4@gmail.com")
+    cy.get('#email').type("{selectAll}HerdianGanti6@gmail.com")
     cy.get('#current-password').type("123123qwe@@")
     cy.get('#form-validate > .actions-toolbar > div.primary > .action').click()
     cy.get('.message-success').should('be.visible')
@@ -37,7 +37,7 @@ describe('Auth Update Account', () => {
   it('sukses_updateaccount_password', () => {
     cy.visit('https://magento.softwaretestingboard.com')
     cy.get('.panel > .header > .authorization-link > a').click()
-    cy.get('#email').type("herdianGanti4@gmail.com")
+    cy.get('#email').type("herdianGanti6@gmail.com")
     cy.get('#pass').type("123123qwe@@")
     cy.wait(30)
     cy.get('.login-container > .block-customer-login > .block-content > #login-form > .fieldset > .actions-toolbar > div.primary > #send2').click()

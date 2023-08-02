@@ -1,11 +1,19 @@
+import Name from "../PageObjects/FirstLastName.js";
+
+
 describe('AuthSignUp', () => {
   it('sukses_signup', () => {
     cy.visit('https://magento.softwaretestingboard.com')
     cy.get('.panel > .header > .authorization-link > a').click()
     cy.get('.login-container > .block-new-customer > .block-content > .actions-toolbar > div.primary > .action').click()
-    cy.get('#firstname').type("Herdian")
-    cy.get('#lastname').type("Testing")
-    cy.get('#email_address').type("herdiantesting13@gmail.com")
+
+
+    //POM
+    const ln = new Name();
+    ln.setFirstName("Herdian")
+    ln.setLastName("Testing")
+
+    cy.get('#email_address').type("herdiantesting17@gmail.com")
     cy.get('#password').type("123123qwe@@")
     cy.get('#password-confirmation').type("123123qwe@@")
     cy.get('#form-validate > .actions-toolbar > div.primary > .action').click()
@@ -16,8 +24,11 @@ describe('AuthSignUp', () => {
     cy.visit('https://magento.softwaretestingboard.com')
     cy.get('.panel > .header > .authorization-link > a').click()
     cy.get('.login-container > .block-new-customer > .block-content > .actions-toolbar > div.primary > .action').click()
-    cy.get('#firstname').type("Herdian")
-    cy.get('#lastname').type("Testing")
+
+    const ln = new Name();
+    ln.setFirstName("Herdian")
+    ln.setLastName("Testing")
+
     cy.get('#email_address').type("testing@gmail.com")
     cy.get('#password').type("123123qwe@@")
     cy.get('#password-confirmation').type("123123qwe@@")
@@ -29,8 +40,11 @@ describe('AuthSignUp', () => {
     cy.visit('https://magento.softwaretestingboard.com')
     cy.get('.panel > .header > .authorization-link > a').click()
     cy.get('.login-container > .block-new-customer > .block-content > .actions-toolbar > div.primary > .action').click()
-    cy.get('#firstname').type("Herdian")
-    cy.get('#lastname').type("Testing")
+
+    const ln = new Name();
+    ln.setFirstName("Herdian")
+    ln.setLastName("Testing")
+    
     cy.get('#email_address').type("herdiantesting@gmail.com")
     cy.get('#password').type("123123qwe")
     cy.get('#password-confirmation').type("123123qwe")
